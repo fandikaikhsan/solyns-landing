@@ -1,23 +1,24 @@
-import { motion } from 'framer-motion';
-import { TextRotate } from '../animations/TextRotate';
+import { motion } from "framer-motion"
+import { TextRotate } from "../animations/TextRotate"
+import { LogoBar } from "./LogoBar"
 
 const rotatingTexts = [
-  'Action items',
-  'Call analysis',
-  'Email responses',
-  'Pitch decks',
-  'Client deliverables',
-];
+  "Action items",
+  "Call analysis",
+  "Email responses",
+  "Pitch decks",
+  "Client deliverables",
+]
 
 export function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative h-[87vh] flex flex-col items-center justify-center overflow-hidden">
       {/* Background Image */}
-      <div 
+      <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: 'url(/images/asset_1.jpg)' }}
+        style={{ backgroundImage: "url(/images/asset_1.jpg)" }}
       />
-      
+
       {/* Content */}
       <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 pt-20">
         <motion.div
@@ -30,7 +31,7 @@ export function Hero() {
             <TextRotate texts={rotatingTexts} interval={3000} />
           </span>
         </motion.div>
-        
+
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -39,16 +40,17 @@ export function Hero() {
         >
           done with AI
         </motion.h1>
-        
+
         <motion.p
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.6, ease: [0.4, 0, 0.2, 1] }}
           className="max-w-xl mx-auto text-base sm:text-lg text-text-secondary mb-8"
         >
-          Accelerate work with AI agents that collaborate, automate, and think alongside your teams.
+          Accelerate work with AI agents that collaborate, automate, and think
+          alongside your teams.
         </motion.p>
-        
+
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -58,10 +60,10 @@ export function Hero() {
             href="#"
             className="inline-flex items-center justify-center px-6 py-3 text-sm font-medium text-white bg-black rounded-full hover:opacity-90 hover:-translate-y-0.5 transition-all duration-200"
           >
-            Book an intro
+            See it in action
           </a>
         </motion.div>
       </div>
     </section>
-  );
+  )
 }

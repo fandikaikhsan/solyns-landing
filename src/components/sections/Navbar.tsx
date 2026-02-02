@@ -1,43 +1,45 @@
-import { useState } from 'react';
-import { motion } from 'framer-motion';
-import { Menu, ChevronDown } from 'lucide-react';
-import { useScrollPosition } from '@/hooks/useScrollPosition';
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import { useState } from "react"
+import { motion } from "framer-motion"
+import { Menu, ChevronDown } from "lucide-react"
+import { useScrollPosition } from "@/hooks/useScrollPosition"
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 
 const navLinks = [
-  { name: 'Products', href: '#', hasDropdown: true },
-  { name: 'Capabilities', href: '#', hasDropdown: true },
-  { name: 'Solutions', href: '#', hasDropdown: true },
-  { name: 'Resources', href: '#', hasDropdown: true },
-  { name: 'Pricing', href: '#pricing' },
-];
+  { name: "Products", href: "#", hasDropdown: true },
+  { name: "Capabilities", href: "#", hasDropdown: true },
+  { name: "Solutions", href: "#", hasDropdown: true },
+  { name: "Resources", href: "#", hasDropdown: true },
+  { name: "Pricing", href: "#pricing" },
+]
 
 const rightLinks = [
-  { name: 'Mission', href: '#' },
-  { name: 'Careers', href: '#' },
-  { name: 'Log in', href: '#' },
-];
+  { name: "Mission", href: "#" },
+  { name: "Careers", href: "#" },
+  { name: "Log in", href: "#" },
+]
 
 export function Navbar() {
-  const { isScrolled } = useScrollPosition();
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const { isScrolled } = useScrollPosition()
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
     <motion.header
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.4, ease: 'easeOut' }}
+      transition={{ duration: 0.4, ease: "easeOut" }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled 
-          ? 'bg-white/95 backdrop-blur-sm shadow-sm border-b border-border-color' 
-          : 'bg-transparent'
+        isScrolled
+          ? "bg-white/95 backdrop-blur-sm shadow-sm border-b border-border-color"
+          : "bg-transparent"
       }`}
     >
       <nav className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-[72px]">
           {/* Logo */}
           <a href="/" className="flex items-center">
-            <span className="text-xl font-semibold text-text-primary">Sana</span>
+            <span className="text-xl font-semibold text-text-primary">
+              Solyns
+            </span>
           </a>
 
           {/* Center Navigation - Desktop */}
@@ -95,7 +97,9 @@ export function Navbar() {
                         onClick={() => setMobileMenuOpen(false)}
                       >
                         {link.name}
-                        {link.hasDropdown && <ChevronDown className="w-5 h-5" />}
+                        {link.hasDropdown && (
+                          <ChevronDown className="w-5 h-5" />
+                        )}
                       </a>
                     ))}
                     <div className="pt-6 border-t border-border-color space-y-4">
@@ -127,5 +131,5 @@ export function Navbar() {
         </div>
       </nav>
     </motion.header>
-  );
+  )
 }
