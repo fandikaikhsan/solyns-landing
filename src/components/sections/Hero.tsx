@@ -1,6 +1,6 @@
 import { motion } from "framer-motion"
 import { TextRotate } from "../animations/TextRotate"
-import { LogoBar } from "./LogoBar"
+// import { LogoBar } from "./LogoBar"
 
 const rotatingTexts = [
   "Action items",

@@ -1,44 +1,44 @@
 import { motion } from "framer-motion"
 import { Linkedin, Instagram, Twitter, Youtube } from "lucide-react"
 
-const sanaLinks = [
-  { name: "Overview", href: "#" },
-  { name: "AI agents", href: "#" },
-  { name: "Enterprise search", href: "#" },
-  { name: "iOS app", href: "#" },
-  { name: "Solutions", href: "#" },
-  { name: "Integrations", href: "#" },
-  { name: "Events", href: "#" },
-  { name: "Security", href: "#" },
-  { name: "Stories", href: "#" },
-  { name: "Pricing", href: "#pricing" },
-  { name: "Help Center", href: "#" },
-]
+// const sanaLinks = [
+//   { name: "Overview", href: "#" },
+//   { name: "AI agents", href: "#" },
+//   { name: "Enterprise search", href: "#" },
+//   { name: "iOS app", href: "#" },
+//   { name: "Solutions", href: "#" },
+//   { name: "Integrations", href: "#" },
+//   { name: "Events", href: "#" },
+//   { name: "Security", href: "#" },
+//   { name: "Stories", href: "#" },
+//   { name: "Pricing", href: "#pricing" },
+//   { name: "Help Center", href: "#" },
+// ]
 
-const sanaLearnLinks = [
-  { name: "Overview", href: "#" },
-  { name: "Learning management", href: "#" },
-  { name: "Content creation", href: "#" },
-  { name: "AI tutor", href: "#" },
-  { name: "Solutions", href: "#" },
-  { name: "Customer stories", href: "#" },
-  { name: "Integrations", href: "#" },
-  { name: "Events", href: "#" },
-  { name: "Pricing", href: "#" },
-  { name: "Help Center", href: "#" },
-  { name: "Changelog", href: "#" },
-]
+// const sanaLearnLinks = [
+//   { name: "Overview", href: "#" },
+//   { name: "Learning management", href: "#" },
+//   { name: "Content creation", href: "#" },
+//   { name: "AI tutor", href: "#" },
+//   { name: "Solutions", href: "#" },
+//   { name: "Customer stories", href: "#" },
+//   { name: "Integrations", href: "#" },
+//   { name: "Events", href: "#" },
+//   { name: "Pricing", href: "#" },
+//   { name: "Help Center", href: "#" },
+//   { name: "Changelog", href: "#" },
+// ]
 
-const companyLinks = [
-  { name: "Sana AI Summit 2026", href: "#" },
-  { name: "Strange Loop Podcast", href: "#" },
-  { name: "Swedish AI Reform", href: "#" },
-  { name: "Mission", href: "#" },
-  { name: "Careers", href: "#" },
-  { name: "Press", href: "#" },
-  { name: "Legal", href: "#" },
-  { name: "Cookie settings", href: "#" },
-]
+// const companyLinks = [
+//   { name: "Sana AI Summit 2026", href: "#" },
+//   { name: "Strange Loop Podcast", href: "#" },
+//   { name: "Swedish AI Reform", href: "#" },
+//   { name: "Mission", href: "#" },
+//   { name: "Careers", href: "#" },
+//   { name: "Press", href: "#" },
+//   { name: "Legal", href: "#" },
+//   { name: "Cookie settings", href: "#" },
+// ]
 
 const socialLinks = [
   { name: "LinkedIn", icon: Linkedin, href: "#" },

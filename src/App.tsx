@@ -8,10 +8,10 @@ import { Testimonials } from "./components/sections/Testimonials"
 import { ModelAgnostic } from "./components/sections/ModelAgnostic"
 import { TeamSolutions } from "./components/sections/TeamSolutions"
 import { EnterprisePartnership } from "./components/sections/EnterprisePartnership"
-import { IntegrationsSecurity } from "./components/sections/IntegrationsSecurity"
+// import { IntegrationsSecurity } from "./components/sections/IntegrationsSecurity"
 import { IOSApp } from "./components/sections/IOSApp"
-import { TrustBanner } from "./components/sections/TrustBanner"
-import { Pricing } from "./components/sections/Pricing"
+// import { TrustBanner } from "./components/sections/TrustBanner"
+// import { Pricing } from "./components/sections/Pricing"
 import { Footer } from "./components/sections/Footer"
 
 function App() {

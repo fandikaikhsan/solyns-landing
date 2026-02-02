@@ -1,5 +1,5 @@
 import { motion } from "framer-motion"
-import { Apple } from "lucide-react"
+// import { Apple } from "lucide-react"
 
 export function IOSApp() {
   return (
